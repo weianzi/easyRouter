@@ -1,0 +1,32 @@
+{
+  "name": "test201606",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --config webpack.config.js --watch",
+    "build": "rimraf build && NODE_ENV=production webpack --config webpack.config.js --optimize-minimize",
+    "start": "webpack-dev-server --devtool eval --progress --colors --hot --host 0.0.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "ejs": "^2.4.2",
+    "ejs4html-loader": "^0.2.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.21.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "rimraf": "^2.5.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
