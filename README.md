@@ -17,5 +17,6 @@ npm run build 合并打包
 
 
 ### 说明
-如果好用，直接看官方文档做就可以了～～ [官方文档](https://github.com/progrape/router)
-用的是本地数据，看不到效果。仅供学习。
+如果好用，直接看官方文档做就可以了～～ [官方文档](https://github.com/progrape/router)。
+
+用的是本地数据，看不到效果，仅供学习。
