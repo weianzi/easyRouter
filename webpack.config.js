@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var webpackConfig = {
     devServer: {
@@ -40,6 +41,10 @@ var webpackConfig = {
             filename: 'index.html',
             template: 'index.html',
         }),
+        new CopyWebpackPlugin([
+             { from: 'js/jquery.min.js', to: 'js/jquery.min.js' },
+             { from: 'js/router.min.js', to: 'js/router.min.js' }
+         ]),
     ]
 }
 
